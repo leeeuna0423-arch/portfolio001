@@ -35,7 +35,7 @@
                     </div>
                     <div class="menu-wrap">
                         <ul class="gnbn gnb">
-                            <li><a href="#">
+                            <li><a href="https://leeeuna0423-arch.github.io/portfolio001/">
                                     <div class="title_b">
                                         <div class="title_b_box">
                                             <div class="title">home</div>
@@ -56,8 +56,12 @@
                             <li><a href="#">
                                     <div class="title_b">
                                         <div class="title_b_box">
-                                            <div class="title">work</div>
-                                            <div class="title">work</div>
+                                            <div class="title">
+                                                <p class="worklink">work</p>
+                                            </div>
+                                            <div class="title">
+                                                <p class="worklink">work</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="number">[00]</div>
@@ -65,8 +69,12 @@
                             <li><a href="#">
                                     <div class="title_b">
                                         <div class="title_b_box">
-                                            <div class="title">prosce</div>
-                                            <div class="title">prosce</div>
+                                            <div class="title">
+                                                <p class="proscelink">prosce</p>
+                                            </div>
+                                            <div class="title">
+                                                <p class="proscelink">prosce</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="number">[00]</div>
@@ -715,7 +723,7 @@
                     <div class="item">
                         <h5>process</h5>
                         <a href="#">
-                            <p>process</p>
+                            <p class="proscelink">process</p>
                         </a>
                     </div>
                     <div class="item">
@@ -1155,6 +1163,16 @@
             $(".designLink").click(function () {
                 $("html, body").animate({
                     scrollTop: 9090
+                }, 500);
+            });
+            $(".worklink").click(function () {
+                $("html, body").animate({
+                    scrollTop: 7772
+                }, 500);
+            });
+            $(".proscelink").click(function () {
+                $("html, body").animate({
+                    scrollTop: 12701
                 }, 500);
             });
 
