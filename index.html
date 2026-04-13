@@ -204,7 +204,7 @@
         <main>
             <section class="video">
                 <div class="box">
-                    <video src="/img/KakaoTalk_20260408_140059144.mp4" muted autoplay loop playsinline></video>
+                    <video src="/1/img/KakaoTalk_20260413_141549711.mp4" muted autoplay loop playsinline></video>
                 </div>
             </section>
             <section class="introduce">
@@ -426,6 +426,10 @@
                             <p>page design</p>
                             <p>retouch</p>
                             <p>package</p>
+                            <div class="swiper-button">
+                                <div class="prev"><i class="fa-solid fa-arrow-right"></i></div>
+                                <div class="next"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
                         </div>
                         <div class="tap-item act5">
                             <div class="swiper figma">
@@ -513,10 +517,6 @@
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                        </div>
-                        <div class="swiper-button">
-                            <div class="prev"><i class="fa-solid fa-arrow-right"></i></div>
-                            <div class="next"><i class="fa-solid fa-arrow-right"></i></div>
                         </div>
 
                     </div>
@@ -673,18 +673,18 @@
                     <div class="pro-bt">
                         <p>about ></p>
                     </div>
-                </div>
-                <div class="pro-path">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1337.14 841.89"
-                        style="enable-background:new 0 0 1337.14 841.89;" xml:space="preserve">
-                        <path class="path" d="M189.17,84.53c228.31,4.42,456.87-28.78,684.58-11.68c41.83,3.14,84.25,8.16,122.8,24.7
-                s73.26,46.18,87.12,85.78s2.35,89.12-32.74,112.12c-16.29,10.68-35.82,15.02-54.95,18.72c-223.67,43.31-455.47,26.11-679.75,66.18
-                c-30.1,5.38-60.54,11.97-87.3,26.76c-26.77,14.79-49.76,39.01-56.39,68.86c-10.58,47.63,23.84,96.04,67.46,117.89
-                c43.63,21.85,94.25,23.4,143.03,24.5c104.74,2.38,209.47,4.75,314.21,7.13c45.37,1.03,90.86,2.07,135.83,8.18
-                c68.58,9.32,135.21,30.39,198.77,57.77c57.19,24.64,117.31,60.5,134.66,120.3" />
-                    </svg>
+                    <div class="pro-path">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1337.14 841.89"
+                            style="enable-background:new 0 0 1337.14 841.89;" xml:space="preserve">
+                            <path class="path" d="M189.17,84.53c228.31,4.42,456.87-28.78,684.58-11.68c41.83,3.14,84.25,8.16,122.8,24.7
+                    s73.26,46.18,87.12,85.78s2.35,89.12-32.74,112.12c-16.29,10.68-35.82,15.02-54.95,18.72c-223.67,43.31-455.47,26.11-679.75,66.18
+                    c-30.1,5.38-60.54,11.97-87.3,26.76c-26.77,14.79-49.76,39.01-56.39,68.86c-10.58,47.63,23.84,96.04,67.46,117.89
+                    c43.63,21.85,94.25,23.4,143.03,24.5c104.74,2.38,209.47,4.75,314.21,7.13c45.37,1.03,90.86,2.07,135.83,8.18
+                    c68.58,9.32,135.21,30.39,198.77,57.77c57.19,24.64,117.31,60.5,134.66,120.3" />
+                        </svg>
 
+                    </div>
                 </div>
 
 
@@ -863,13 +863,14 @@
 
         const ani1 = gsap.timeline();
 
-        ani1.fromTo('.con .item6', { scale: 0, x: 0, y: 0 }, { scale: 1, y: "-27vw", ease: "power2.out", duration: 1 }, 0.5)
-            .fromTo('.con .item1', { scale: 0, x: 0, y: 0 }, { scale: 1, x: "27vw", y: "-24vw", ease: "power2.out", duration: 1 }, 0.5)
-            .fromTo('.con .item4', { scale: 0, x: 0, y: 0 }, { scale: 1, x: "-28vw", y: "-24vw", ease: "power2.out", duration: 1 }, 0.5)
-            .fromTo('.con .item2', { scale: 0, x: 0, y: 0 }, { scale: 1, x: "35vw", y: "0vw", ease: "power2.out", duration: 1 }, 0.5)
-            .fromTo('.con .item7', { scale: 0, x: 0, y: 0 }, { scale: 1, x: "-35vw", y: "0vw", ease: "power2.out", duration: 1 }, 0.5)
-            .fromTo('.con .item5', { scale: 0, x: 0, y: 0 }, { scale: 1, x: "12vw", y: "9vw", ease: "power2.out", duration: 1 }, 0.5)
-            .fromTo('.con .item3', { scale: 0, x: 0, y: 0 }, { scale: 1, x: "-15vw", y: "10vw", ease: "power2.out", duration: 1 }, 0.5);
+
+        ani1.fromTo('.con .item6', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: -50, yPercent: -190, ease: "power2.out", duration: 1 }, 0.5)
+            .fromTo('.con .item1', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: 150, yPercent: -180, ease: "power2.out", duration: 1 }, 0.5)
+            .fromTo('.con .item4', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: -250, yPercent: -180, ease: "power2.out", duration: 1 }, 0.5)
+            .fromTo('.con .item2', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: 180, yPercent: -55, ease: "power2.out", duration: 1 }, 0.5)
+            .fromTo('.con .item7', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: -300, yPercent: -55, ease: "power2.out", duration: 1 }, 0.5)
+            .fromTo('.con .item5', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: 30, yPercent: -5, ease: "power2.out", duration: 1 }, 0.5)
+            .fromTo('.con .item3', { scale: 0, xPercent: 0, yPercent: 0 }, { scale: 1, xPercent: -140, yPercent: -0, ease: "power2.out", duration: 1 }, 0.5)
 
         ScrollTrigger.create({
             animation: ani1,
@@ -895,6 +896,8 @@
                 start: "top 80%",
                 end: "top 50%",
                 scrub: 1,
+                // markers: true
+
             }
         });
 
@@ -930,28 +933,47 @@
         });
 
         $(function () {
+
+            function getSkille() {
+                if (window.matchMedia("(max-width: 564px)").matches) {
+                    return 350;   // 👉 모바일/태블릿
+                } else if (window.matchMedia("(max-width: 1024px)").matches) {
+                    return 900;   // 👉 중간 사이즈
+                } else {
+                    return 719;   // 👉 기본 (PC)
+                }
+            }
+
             let skillh = $("main .skill").offset().top;
-            let skille = 719;
+            let skille = getSkille();
+
+            $(window).on('resize', function () {
+                skille = getSkille(); // ⭐ 화면 바뀌면 다시 적용
+            });
 
             $(window).on('scroll', function () {
-                if ($(window).scrollTop() >= skillh && $(window).scrollTop() < skillh + skille) {
+                let scrollTop = $(window).scrollTop();
+
+                if (scrollTop >= skillh && scrollTop < skillh + skille) {
+
                     $("main .skill .skill-txt").addClass("act");
-                    let scrollTop = $(window).scrollTop();
+
                     $('main .skill .st-con').css({
-                        left: -(scrollTop - skillh + 0) + 'px',
+                        left: -(scrollTop - skillh) + 'px',
                     });
-                }
-                else if ($(window).scrollTop() >= skillh + skille) {
-                    let scrollTop = $(window).scrollTop();
+
+                } else if (scrollTop >= skillh + skille) {
+
                     $("main .skill .skill-txt").css({
                         top: (skille + skillh - scrollTop) + 'px'
-                    }
-                    );
-                }
-                else {
+                    });
+
+                } else {
+
                     $("main .skill .skill-txt").removeClass("act");
                 }
             });
+
         });
 
         // 작업
@@ -964,9 +986,11 @@
             opacity: 0,
             scrollTrigger: {
                 trigger: ".work",
-                start: "top 80%",
+                start: "top 50%",
                 end: "top 50%",
                 scrub: 1,
+                // markers: true
+
             }
         });
 
@@ -975,7 +999,7 @@
             opacity: 0,
             scrollTrigger: {
                 trigger: ".work",
-                start: "top 80%",
+                start: "top 60%",
                 end: "top 50%",
                 scrub: 1,
             }
@@ -1021,9 +1045,11 @@
             opacity: 0,
             scrollTrigger: {
                 trigger: ".ncs",
-                start: "top 80%",
-                end: "top 50%",
+                start: "top 35%",
+                end: "top 80%",
                 scrub: 1,
+                // markers: true
+
             }
         });
 
@@ -1032,7 +1058,7 @@
             opacity: 0,
             scrollTrigger: {
                 trigger: ".ncs",
-                start: "top 80%",
+                start: "top 35%",
                 end: "top 50%",
                 scrub: 1,
             }
@@ -1156,23 +1182,23 @@
 
             $(".codingLink").click(function () {
                 $("html, body").animate({
-                    scrollTop: 8090
+                    scrollTop: 7672
                 }, 500);
             });
 
             $(".designLink").click(function () {
                 $("html, body").animate({
-                    scrollTop: 9090
+                    scrollTop: 8472
                 }, 500);
             });
             $(".worklink").click(function () {
                 $("html, body").animate({
-                    scrollTop: 7772
+                    scrollTop: 7118
                 }, 500);
             });
             $(".proscelink").click(function () {
                 $("html, body").animate({
-                    scrollTop: 12701
+                    scrollTop: 11601
                 }, 500);
             });
 
